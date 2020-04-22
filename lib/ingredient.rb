@@ -4,6 +4,6 @@ class Ingredient
   def initialize (food)
     @name = food[:name]
     @unit = food[:unit]
-    @caloriies = food[:calories]
+    @calories = food[:calories]
   end
 end
