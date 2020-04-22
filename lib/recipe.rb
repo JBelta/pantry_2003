@@ -1,7 +1,7 @@
 class Recipe
-  attr_reader :dish
+  attr_reader :name
 
-  def initialize(dish)
-    @dish = dish
+  def initialize(name)
+    @name = name
   end
 end
