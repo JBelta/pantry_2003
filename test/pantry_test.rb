@@ -14,4 +14,6 @@ class PantryTest < Minitest::Test
     pantry = Pantry.new
     assert_equal ({}), pantry.stock
   end
+
+
 end
