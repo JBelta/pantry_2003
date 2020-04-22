@@ -15,6 +15,9 @@ class CookBookTest < Minitest:: Test
     recipe1 = Recipe.new("Mac and Cheese")
     recipe2 = Recipe.new("Cheese Burger")
     assert_equal [], cookbook.recipies
-  end
 
+    cookbook.add_recipe(recipe1)
+    cookbook.add_recipe(recipe2)
+    assert_equal [recipe1, recipe2], cookbook.recipies
+  end
 end
