@@ -2,6 +2,10 @@ class CookBook
   attr_reader :recipies
 
   def initialize
-    @recipies = Hash.new
+    @recipies = Array.new
   end
-end 
+
+  def add_recipe(recipe)
+    @recipies << recipe
+  end
+end
